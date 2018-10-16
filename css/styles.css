@@ -272,6 +272,7 @@ li {
 /* Base layout styles begin here----------------------- */
     .container {
         grid-template-columns: 1fr;
+        margin: 0;
     }
     .title {
         text-align: center;
