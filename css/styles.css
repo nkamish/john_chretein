@@ -66,9 +66,14 @@ a:hover {
 }
 
 img {
-    width: auto;
+    /* width: -webkit-fill-available; */
+    /* width: auto;
     max-width: 100%;
-    height: auto;
+    height: auto; */
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
 }
 
 img:hover{
@@ -85,9 +90,15 @@ ul {
     list-style: none;
     display: flex;
     align-items: center;
+    /* width: 50%; */
 }
 li {
     text-align: center;
+    padding-left: 20px;
+}
+.copyright {
+    padding-left: 65%;
+    width: 80%;
 }
 
 /* Base styles ends here--------------------- */
@@ -100,8 +111,8 @@ li {
         font-weight: 400;
         line-height: 1.3;
         padding: 32px;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 80px;
+        margin-right: 80px;
         margin-top: -2px;
         border-bottom: 1px;
 
@@ -131,8 +142,9 @@ li {
 
 .container_main {
     margin: 0 auto;
-    padding-left: 7%;
-    padding-right: 7%;
+    /* width: 1400px; */
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .container {
     display: grid;
@@ -140,25 +152,35 @@ li {
     grid-gap: 20px;
     margin: 10px;
 }
+.container {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+}
 .photography {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;        
 }
+}
+
+.photography img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+}
+
     .stripes {
         grid-column-start: 1;
         grid-column-end:  2;
-        width: fit-content;
     }
     .camera {
         grid-column-start: 2;
         grid-column-end:  4;
-        width: fit-content;
     }
     .biker {
         grid-column-start: 1;
         grid-column-end: 4;
-        width: fit-content;
     }
 
 .listening {
@@ -169,12 +191,50 @@ li {
     margin-bottom: 50px;
 }
 
+.contact {
+    font-size: 20px;
+    /* padding-left:  */
+}
+
 /* grid for selected works ends here------------------- */
+
+@media screen and (max-width: 680px) {
+    
+    .container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .photography {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;        
+    }
+    .stripes {
+        grid-column-start: 1;
+        grid-column-end:  2;
+    }
+    .camera {
+        grid-column-start: 1;
+        grid-column-end:  2;
+    }
+    .biker {
+        grid-column-start: 1;
+        grid-column-end:  2;
+    }
+    .ballerina {
+        grid-column-start: 1;
+        grid-column-end:  2;
+    }
+    .warriors {
+        grid-column-start: 1;
+        grid-column-end:  2;
+    }
+}
 
 @media screen and (max-width: 468px) {
 /* Base layout styles begin here----------------------- */
     .container {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
     }
     .title {
         text-align: center;
@@ -196,36 +256,34 @@ li {
 
     .stripes {
         grid-column-start: 1;
-        grid-column-end:  3;
-        width: fit-content;
+        grid-column-end:  2;
     }
     .camera {
         grid-column-start: 1;
-        grid-column-end:  3;
-        width: fit-content;
+        grid-column-end:  2;
     }
     .biker {
         grid-column-start: 1;
-        grid-column-end:  3;
-        width: fit-content;
+        grid-column-end:  2;
     }
     .ballerina {
         grid-column-start: 1;
-        grid-column-end:  3;
-        width: fit-content;
+        grid-column-end:  2;
     }
     .warriors {
         grid-column-start: 1;
-        grid-column-end:  3;
-        width: fit-content;
+        grid-column-end:  2;
     }
 
 /* grid layout styles for photography ends here-------- */
 /* ==================================================== */
 /* grid layout styles for listening begins here-------- */
+    
     .listening {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
     }
 
+    
 /* grid layout styles for listening ends here---------- */
+    
 }
