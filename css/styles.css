@@ -100,18 +100,28 @@ hr{
 }
 
 ul {
-    list-style: none;
     display: flex;
-    align-items: center;
-    /* width: 50%; */
+    list-style: none;
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    
 }
 li {
-    text-align: center;
-    padding-left: 20px;
+    display: inline;
+    margin-right: 20px;
 }
-.copyright {
-    padding-left: 65%;
-    width: 80%;
+
+.footer{
+    display: flex;
+    align-items: flex-end;
+    flex: 1 1 0%;
+    width: 100%;
+    justify-content: flex-end;
+}
+footer {
+    display: flex;
+    padding: 10px;
 }
 
 /* Base styles ends here--------------------- */
