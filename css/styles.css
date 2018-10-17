@@ -185,7 +185,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;        
 }
-
     .stripes {
         grid-column-start: 1;
         grid-column-end:  2;
@@ -206,16 +205,14 @@ footer {
     grid-gap: 20px;
     margin-bottom: 50px;
 }
-
 .contact {
     font-size: 20px;
-    /* padding-left:  */
 }
 
 /* grid for selected works ends here------------------- */
 
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1220px) { /*<----------Responsive design begins here*/
     
     .container {
         grid-template-columns: 1fr 1fr;
@@ -230,10 +227,14 @@ footer {
         grid-template-columns: 1fr 1fr;
         width: 100%;
     }
-}
+    .contact {
+        align-items: center;
+        justify-content: center;
+    }
+} /*<----------Responsive design ends here*/
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 720px) { /*<----------Responsive design begins here*/
     
     .container {
         grid-template-columns: 1fr;
@@ -251,11 +252,11 @@ footer {
         margin-right: 20px;
     }
 
-    .photography {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;        
-    }
+.photography {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;        
+}
     .stripes {
         grid-column-start: 1;
         grid-column-end:  2;
@@ -277,12 +278,10 @@ footer {
         grid-column-end:  2;
     }
 
-/* grid layout styles for listening begins here-------- */
-
-    .listening {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
+.listening {
+    grid-template-columns: 1fr;
+    width: 100%;
+}
     .item1 {
         grid-column-start: 1;
         grid-column-end:  2;
@@ -295,10 +294,10 @@ footer {
         font-size: 20px;
         text-align: center;
     }
-}
+} /*<----------Responsive design ends here*/
 
-@media screen and (max-width: 468px) {
-/* Base layout styles begin here----------------------- */
+@media screen and (max-width: 468px) { /*<----------Responsive design begins here*/
+
     .container {
         grid-template-columns: 1fr;
         margin: 0;
@@ -320,10 +319,6 @@ footer {
         margin-right: 20px;
     }
 
-/* Base layout styles ends here------------------------ */
-
-/* grid layout styles for photography begins here------ */
-
     .stripes {
         grid-column-start: 1;
         grid-column-end:  2;
@@ -344,14 +339,9 @@ footer {
         grid-column-start: 1;
         grid-column-end:  2;
     }
-
-/* grid layout styles for listening begins here-------- */
     
-    .listening {
-        grid-template-columns: 1fr;
-    }
-
-    
-/* grid layout styles for listening ends here---------- */
-    
+.listening {
+    grid-template-columns: 1fr;
 }
+    
+} /*<----------Responsive design ends here*/
