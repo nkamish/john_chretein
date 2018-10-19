@@ -1,4 +1,4 @@
-# Project 2: Rebuilding johnchretien.com
+# Project 2: Rebuilding jonchretien.com
 
 Rebuilding John Chretiens website as closely as possible using my own HTML & CSS skills.
 
@@ -25,7 +25,7 @@ Tools:
 - https://jonchretien.com/
 
 ## Live Link 
-- https://nkamish.github.io/john_chretein/index.html
+- https://nkamish.github.io/jon_chretein/index.html
 
 ### Changelog
 
