@@ -25,7 +25,7 @@ Tools:
 - https://jonchretien.com/
 
 ## Live Link 
-- https://nkamish.github.io/project_2/index.html
+- https://nkamish.github.io/john_chretein/index.html
 
 ### Changelog
 
